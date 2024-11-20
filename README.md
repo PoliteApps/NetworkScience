@@ -1,6 +1,6 @@
 # NetworkScience
 
-This repository was created for the final project.
+This [Git repository](https://github.com/PoliteApps/NetworkScience) was created for the final project. 
 
 ## Steps to analyze a network using Neo4j
 1. Go to [Neo4j Labs](https://llm-graph-builder.neo4jlabs.com/)  
