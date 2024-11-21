@@ -1,0 +1,5 @@
+Conhecimentos numéricos;
+Conhecimentos geométricos;
+Conhecimentos de estatística e probabilidade;
+Conhecimentos algébricos;
+Conhecimentos algébricos/geométricos;
