@@ -22,16 +22,24 @@ Data can be consumed by this [Streamlit app](https://avalia-ai.streamlit.app/). 
 [Maritaca Enem](https://huggingface.co/datasets/maritaca-ai/enem)
 [Enem Microdata](https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/enem)
 
+# General Notes
+Maritaca dataset has only data from those two specific tests:
+
+- ENEM_2022_P1_CAD_03_DIA_1_BRANCO
+    - 1º Dia – Caderno 3 – Branco - Aplicação Regular
+        - Prova de linguagens, códigos e suas tecnologias e redação (Test code: 1068)
+        - Prova de ciências humanas e suas tecnologias (Test code: 1057)
+
+ - ENEM_2022_P1_CAD_06_DIA_2_CINZA
+    - 2º Dia – Caderno 6 – Cinza (Superampliada)
+        - Prova de ciências da natureza e suas tecnologias (Test code: 1087)
+        - Prova de matemática e suas tecnologias (Test code: 1078)
+
 ## To do:
 
-1. tools/script.py generates questions_2022.csv and questions_2023.csv [Done]
-1. tools/dif.py generates enem_dif_dataset.csv with student characteristics and enem_responses_dataset.csv [Rerun]
-1. tools/samplig.py generates enem_random_sample.csv and we need to filter tests that matches with Maritaca dataset [Rerun]
-
-## To do but in portuguese:
-
-1. tirar uma sample do dataset de alunos que fizeram o caderno de provas que a gente precisa (coloquei no README) - foco 2022
-1. ⁠Fazer um dataset com o gabarito + o que cada estudante marcou em cada questão
-1. ⁠Fazer um dataset com os estudantes e as características dele (genero, tipo de escola, etc)
-1. Utilizar outro repositório para gerar os grafos
-1. Definir as perguntas e analisar
+1. tools/script.py generates treated_data/questions_2022.csv and treated_data/questions_2023.csv [Done]
+1. tools/samplig.py generates enem_random_sample.csv and we need to filter tests that matches with Maritaca dataset [Done]
+1. tools/dif.py generates enem_dif_dataset.csv  [Done]
+1. tools/dif.py generates student responses per test in separated *.csv files [Done]
+1. Add to all 4 student responses a line with the correct answer [Todo]
+1. Use the streamlit app to generate statistics of those students [Todo]
