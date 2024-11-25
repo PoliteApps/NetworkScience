@@ -41,5 +41,5 @@ Maritaca dataset has only data from those two specific tests:
 1. tools/samplig.py generates enem_random_sample.csv and we need to filter tests that matches with Maritaca dataset [Done]
 1. tools/dif.py generates enem_dif_dataset.csv  [Done]
 1. tools/dif.py generates student responses per test in separated *.csv files [Done]
-1. Add to all 4 student responses a line with the correct answer [Todo]
-1. Use the streamlit app to generate statistics of those students [Todo]
+1. Add to all 4 student responses a line with the correct answer [Done]
+1. Use the streamlit app to generate statistics of those students [Done]
